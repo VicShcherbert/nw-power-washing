@@ -27,6 +27,10 @@ body {
   margin: 0 auto;
 }
 
+#main-container {
+  width: fit-content;
+}
+
 #container-title {
   background-color: gray;
   overflow: hidden;
@@ -46,7 +50,7 @@ body {
   background-color: gray;
   width: 100%;
   text-align: center;
-  position: sticky;
+  /* position: fixed; */
   bottom: 0px;
   box-shadow: 1px -3px 5px #8d8b86;
   /* height: auto; */
@@ -57,9 +61,13 @@ body {
   padding: 10px;
 }
 
+#container-image {
+  text-align: center;
+}
+
 .image {
-  width:100%;
-  height: 100%;
+  width: 50%;
+  /* height: 100%; */
 }
 
 /* Transitioning from mobile to desktop */
@@ -77,6 +85,11 @@ body {
     line-height: 35px;
     font-size: 30px;
   }
+  /* #container-image {
+    width: 50%;
+    display: block;
+    margin: auto;
+  } */
 }
 
 @media (max-width: 699px) {
@@ -89,5 +102,8 @@ body {
   .container-widget {
     line-height: 50px;
     font-size: 40px;
+  }
+  .image {
+    width: 100%;
   }
 }
